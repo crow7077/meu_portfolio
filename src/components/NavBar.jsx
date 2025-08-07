@@ -7,10 +7,7 @@ export default function NavBar() {
 
   return (
     <nav>
-
-      <div>
-        <img className="ns-design" src={nsDesign} alt="Logo" />
-      </div>
+      <img className="ns-design" src={nsDesign} alt="Logo" />
 
       <div className="logo">NSDesign</div>
 

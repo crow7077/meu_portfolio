@@ -24,6 +24,7 @@ nav {
 
 /* Ícone hambúrguer */
 .menu-icon {
+    right: 1rem;
     width: 30px;
     height: 20px;
     position: relative;

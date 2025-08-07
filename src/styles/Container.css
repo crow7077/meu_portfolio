@@ -17,8 +17,17 @@ main {
     z-index: 0;
 }
 
-.retangulos {
+.retangulo {
     border: solid 2px #ff0000;
     width: 100%;
     height: 22.065rem;
+    display: flex;
+    justify-content: center;
 }
+
+.retangulos {
+    margin-top: 10px;
+    width: 27.5rem;
+    height: 16.57rem;
+}
+
