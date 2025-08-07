@@ -106,3 +106,10 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+.retangulos {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 92.4375rem;
+    height: auto;
+}
