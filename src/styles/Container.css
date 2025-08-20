@@ -21,6 +21,7 @@ main {
 
 .retangulo {
     max-width: 100%;
+    border: solid 2px #ff0000;
     width: 100%;
     height: 22.065rem;
     display: flex;
