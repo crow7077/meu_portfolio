@@ -10,6 +10,8 @@ main {
 }
 
 .container {
+    display: flex;
+    justify-content: center;
     width: 97%;
     height: 100%;
     background-color: #303030;
@@ -22,7 +24,7 @@ main {
 .retangulo {
     max-width: 100%;
     border: solid 2px #ff0000;
-    width: 100%;
+    width: 90%;
     height: 22.065rem;
     display: flex;
     justify-content: center;

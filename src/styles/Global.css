@@ -23,8 +23,8 @@ nav ul {
     position: absolute;
     top: 60px;
     right: 10px;
-    background: #303030;
-    box-shadow: #111111 0 4px 10px ;
+    background: #cfbb08;
+    box-shadow: #000000 0 5px 15px;
     padding: 1rem;
     border-radius: 8px;
     opacity: 0;
@@ -64,6 +64,7 @@ nav a {
         pointer-events: auto;
         background: none;
         padding: 0;
+        box-shadow: none;
     }
 }
 
@@ -72,6 +73,11 @@ nav a {
     .container {
         max-width: 1980px;
     }
+}
+
+nav a {
+    padding: 8px 12px;
+    box-shadow: none;
 }
 
 :root {
