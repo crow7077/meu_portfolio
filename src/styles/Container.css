@@ -1,4 +1,6 @@
-/* CONTAINER */
+/* CONTAINER MOBILE*/
+
+/* Home */
 main {
     display: flex;
     align-items: center;
@@ -21,18 +23,163 @@ main {
     z-index: 0;
 }
 
-.retangulo {
+.hero {
     max-width: 100%;
-    border: solid 2px #ff0000;
     width: 90%;
     height: 22.065rem;
     display: flex;
     justify-content: center;
 }
 
-.retangulos {
-    margin-top: 10px;
-    width: 27.5rem;
-    height: 16.57rem;
+.fundoDesign {
+    top: 1.8rem;
+    left: 0.0rem;
+    width: 26.2rem;
+    height: 51.25rem;
+    position: absolute;
+    z-index: 0;
 }
 
+.retangulos {
+    top: 1.6rem;
+    width: 27.5rem;
+    height: 16.57rem;
+    position: relative;
+    z-index: 0;
+}
+
+.typewrite {
+    top: 9.8rem;
+    right: 2.5rem;
+    font-size: 36px;
+    color: #fff;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    animation: typing 3s steps(12, end) forwards;
+    animation-delay: 2s;
+    white-space: nowrap;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 12ch;
+    }
+}
+
+.foldercv {
+    width: 102px;
+    height: auto;
+    top: 241.5px;
+    right: 68.5px;
+    position: absolute;
+    z-index: 1;
+}
+
+.arrow {
+    width: 2.5rem;
+    height: auto;
+    top: 19.2rem;
+    right: 3rem;
+    transform: translate(-50%, -50%);
+    transform-origin: bottom center;
+    animation: clickArrow 1.5s ease-in-out infinite;
+    position: absolute;
+    z-index: 4;
+}
+
+@keyframes clickArrow {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1)
+    }
+
+    50% {
+        transform: translate(-50%, -40%) scale(0.92)
+    }
+}
+
+/* Sobre Mim */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 22rem;
+    width: 100%;
+    height: 59.12rem;
+    position: absolute;
+    z-index: 4;
+}
+
+.about_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 410px;
+    height: 134px;
+}
+
+.about_title, h2 {
+    text-align: center;
+    font-family: 'Alice';
+    font-size: 81px;
+    font-weight: 100;
+    color: #ffa600;
+    line-height: 60px;
+}
+
+.about-img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 410px;
+    height: 353px;
+}
+
+.tools {
+    width: auto;
+    height: 328px;
+}
+
+.aboutImg {
+    width: auto;
+    height: 328px;
+}
+
+.about-description {
+    display: flex;
+    justify-content: center;
+    width: 410px;
+    height: 477px;
+}
+
+.about-description, h1 {
+    font-size: 18px;
+    line-height: 133%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+/* === TABLET === */
+@media (min-width: 768px) {
+    .container {
+        max-width: 1024px;
+    }
+
+}
+
+/* === DESKTOP === */
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1980px;
+    }
+
+}
