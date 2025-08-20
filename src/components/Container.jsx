@@ -1,7 +1,8 @@
 import "../styles/Container.css";
+import cv from "../assets/img/cv.pdf";
 import retangulos from "../assets/img/retangulos.png";
 import group1 from "../assets/img/group-1.png";
-import fundoDesign from "../assets/img/fundoDesign.png";
+import letraT from "../assets/img/letra-t-vetorizada.png";
 import folderCv from "../assets/img/folder.svg";
 import arrow from "../assets/img/arrow.svg";
 import tools from "../assets/img/tools.svg";
@@ -16,7 +17,6 @@ export default function Container({ children }) {
         {/* Seção Home */}
 
         <div className="hero">
-          <img className="fundoDesign" src={fundoDesign} alt="Escrita design" />
           <picture>
             <source media="(min-width: 768px)" srcSet={group1} />
             <img
@@ -30,6 +30,7 @@ export default function Container({ children }) {
               alt="Imagem da pasta"
               onClick={() => window.open(cv, "_blank")}
             />
+            <img className="letraT" src={letraT} alt="Letra T" />
             <img className="arrow" src={arrow} alt="Seta Clicando" />
 
             <div className="typewrite">Design UI/UX</div>
@@ -53,29 +54,53 @@ export default function Container({ children }) {
           <div className="about-description">
             <h1>
               Me chamo Renato Nunes Junior e sou
-              <br />Desenhista, Designer Gráfico,
-              <br />Digital e UI Designer.
-              <br />Conheci a arte do desenho aos 7 anos de
-              <br />idade e desde então, venho desenvolvendo
-              <br />minhas técnicas artísticas. Busquei
-              <br />conhecimento na área digital e me tornei
-              <br />Designer Gráfico, com mais de 4 anos de
-              <br />experiência, apaixonado por criar visuais
-              <br />impactantes e experiências digitais intuitivas.
-              <br />Tenho uma sólida base em softwares como
-              <br />CorelDRAW, Photoshop, Canva, Figma e
-              <br />Procreate. Ao longo da minha carreira,
-              <br />desenvolvi diversas habilidades, desde a
-              <br />criação de logotipos e artes digitais até
+              <br />
+              Desenhista, Designer Gráfico,
+              <br />
+              Digital e UI Designer.
+              <br />
+              Conheci a arte do desenho aos 7 anos de
+              <br />
+              idade e desde então, venho desenvolvendo
+              <br />
+              minhas técnicas artísticas. Busquei
+              <br />
+              conhecimento na área digital e me tornei
+              <br />
+              Designer Gráfico, com mais de 4 anos de
+              <br />
+              experiência, apaixonado por criar visuais
+              <br />
+              impactantes e experiências digitais intuitivas.
+              <br />
+              Tenho uma sólida base em softwares como
+              <br />
+              CorelDRAW, Photoshop, Canva, Figma e
+              <br />
+              Procreate. Ao longo da minha carreira,
+              <br />
+              desenvolvi diversas habilidades, desde a
+              <br />
+              criação de logotipos e artes digitais até
               <br />a prototipação de interfaces para sites
               <br />e aplicativos.
-              <br />Destaco-me pela minha capacidade de
-              <br />adaptação e por estar sempre atualizado
-              <br />com as últimas tendências do mercado.
+              <br />
+              Destaco-me pela minha capacidade de
+              <br />
+              adaptação e por estar sempre atualizado
+              <br />
+              com as últimas tendências do mercado.
             </h1>
           </div>
         </div>
+
+        {/* Seção Bem Vindo */}
+
+        <div className="bemVindo">
+          <h1>ASDV</h1>
+        </div>
+        
       </div>
     </main>
-  );
+  )
 }

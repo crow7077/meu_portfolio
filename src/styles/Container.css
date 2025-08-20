@@ -1,171 +1,197 @@
-/* CONTAINER MOBILE*/
+/* === MOBILE === */
+@media (min-width: 400px) {
+    .container {
+        max-width: 768px;
+    }
 
-/* Home */
-main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 345rem;
-    max-width: 100%;
-    box-sizing: border-box;
-}
+    /* Menu */
 
-.container {
-    display: flex;
-    justify-content: center;
-    width: 97%;
-    height: 100%;
-    background-color: #303030;
-    border-radius: 1.5rem;
-    margin-top: 1rem;
-    position: relative;
-    z-index: 0;
-}
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        position: absolute;
+        top: 65px;
+        right: 10px;
+        background: #FFA600;
+        box-shadow: #000000 0 5px 15px;
+        padding: 1rem;
+        border-radius: 8px;
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: all 0.3s ease;
+        z-index: 2;
+    }
 
-.hero {
-    max-width: 100%;
-    width: 90%;
-    height: 22.065rem;
-    display: flex;
-    justify-content: center;
-}
+    nav ul.open {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
 
-.fundoDesign {
-    top: 1.8rem;
-    left: 0.0rem;
-    width: 26.2rem;
-    height: 51.25rem;
-    position: absolute;
-    z-index: 0;
-}
+    nav a {
+        color: #ffffff;
+        text-decoration: none;
+    }
 
-.retangulos {
-    top: 1.6rem;
-    width: 27.5rem;
-    height: 16.57rem;
-    position: relative;
-    z-index: 0;
-}
+    /* Home */
 
-.typewrite {
-    top: 9.8rem;
-    right: 2.5rem;
-    font-size: 36px;
-    color: #fff;
-    overflow: hidden;
-    font-family: 'Courier New', Courier, monospace;
-    animation: typing 3s steps(12, end) forwards;
-    animation-delay: 2s;
-    white-space: nowrap;
-    width: 0;
-    position: absolute;
-    z-index: 2;
-}
+    .hero {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        background-color: #706c5f;
+        width: 25.6rem;
+        height: 22.065rem;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+        z-index: 1;
+    }
 
-@keyframes typing {
-    from {
+    .retangulos {
+        top: 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .letraT {
+        width: 119px;
+        height: auto;
+        top: 220px;
+        left: 30px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .typewrite {
+        top: 9.8rem;
+        right: 2.5rem;
+        font-size: 36px;
+        color: #fff;
+        overflow: hidden;
+        font-family: 'Courier New', Courier, monospace;
+        animation: typing 3s steps(12, end) forwards;
+        animation-delay: 2s;
+        white-space: nowrap;
         width: 0;
+        position: absolute;
+        z-index: 2;
     }
 
-    to {
-        width: 12ch;
-    }
-}
+    @keyframes typing {
+        from {
+            width: 0;
+        }
 
-.foldercv {
-    width: 102px;
-    height: auto;
-    top: 241.5px;
-    right: 68.5px;
-    position: absolute;
-    z-index: 1;
-}
-
-.arrow {
-    width: 2.5rem;
-    height: auto;
-    top: 19.2rem;
-    right: 3rem;
-    transform: translate(-50%, -50%);
-    transform-origin: bottom center;
-    animation: clickArrow 1.5s ease-in-out infinite;
-    position: absolute;
-    z-index: 4;
-}
-
-@keyframes clickArrow {
-
-    0%,
-    100% {
-        transform: translate(-50%, -50%) scale(1)
+        to {
+            width: 12ch;
+        }
     }
 
-    50% {
-        transform: translate(-50%, -40%) scale(0.92)
+    .foldercv {
+        width: 102px;
+        height: auto;
+        top: 241.5px;
+        right: 68.5px;
+        position: absolute;
+        z-index: 2;
     }
-}
 
-/* Sobre Mim */
+    .arrow {
+        width: 2.5rem;
+        height: auto;
+        top: 19.2rem;
+        right: 3rem;
+        transform: translate(-50%, -50%);
+        transform-origin: bottom center;
+        animation: clickArrow 1.5s ease-in-out infinite;
+        position: absolute;
+        z-index: 4;
+    }
 
-.about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    top: 22rem;
-    width: 100%;
-    height: 59.12rem;
-    position: absolute;
-    z-index: 4;
-}
+    @keyframes clickArrow {
 
-.about_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 410px;
-    height: 134px;
-}
+        0%,
+        100% {
+            transform: translate(-50%, -50%) scale(1)
+        }
 
-.about_title, h2 {
-    text-align: center;
-    font-family: 'Alice';
-    font-size: 81px;
-    font-weight: 100;
-    color: #ffa600;
-    line-height: 60px;
-}
+        50% {
+            transform: translate(-50%, -40%) scale(0.92)
+        }
+    }
 
-.about-img-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 410px;
-    height: 353px;
-}
+    /* Sobre Mim */
 
-.tools {
-    width: auto;
-    height: 328px;
-}
+    .about {
+        background-color: #706c5f;
+        width: 100%;
+        height: 970px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .about_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 410px;
+        height: 134px;
+    }
+    
+    .about_title,
+    h2 {
+        text-align: center;
+        font-family: 'Alice';
+        font-size: 81px;
+        font-weight: 100;
+        color: #ffa600;
+        line-height: 60px;
+    }
+    
+    .about-img-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 410px;
+        height: 353px;
+    }
+    
+    .tools {
+        width: auto;
+        height: 328px;
+    }
+    
+    .aboutImg {
+        width: auto;
+        height: 328px;
+    }
+    
+    .about-description {
+        display: flex;
+        justify-content: center;
+        width: 410px;
+        height: 477px;
+    }
 
-.aboutImg {
-    width: auto;
-    height: 328px;
-}
+    .about-description,
+    h1 {
+        font-size: 18px;
+        line-height: 133%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 300;
+    }
 
-.about-description {
-    display: flex;
-    justify-content: center;
-    width: 410px;
-    height: 477px;
-}
+    /* Bem Vindo */
 
-.about-description, h1 {
-    font-size: 18px;
-    line-height: 133%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+    .bemVindo {
+        background-color: #FFA600;
+        width: 410px;
+        height: 704px;
+    }
 }
 
 /* === TABLET === */
