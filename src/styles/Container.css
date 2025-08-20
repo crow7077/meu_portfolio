@@ -6,6 +6,11 @@
 
     /* Menu */
 
+    nav {
+        position: relative;
+        z-index: 9999;
+    }
+
     nav ul {
         list-style: none;
         display: flex;
@@ -22,7 +27,7 @@
         transform: translateY(-10px);
         pointer-events: none;
         transition: all 0.3s ease;
-        z-index: 2;
+        z-index: 100;
     }
 
     nav ul.open {
@@ -46,14 +51,10 @@
         width: 25.6rem;
         height: 22.065rem;
         border-radius: 20px 20px 0 0;
-        position: relative;
-        z-index: 1;
     }
 
     .retangulos {
         top: 20px;
-        position: relative;
-        z-index: 1;
     }
 
     .letraT {
@@ -133,16 +134,16 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    
-    .about_title {
+
+    .about-title {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 410px;
         height: 134px;
     }
-    
-    .about_title,
+
+    .about-title,
     h2 {
         text-align: center;
         font-family: 'Alice';
@@ -151,7 +152,7 @@
         color: #ffa600;
         line-height: 60px;
     }
-    
+
     .about-img-container {
         display: flex;
         justify-content: space-around;
@@ -159,17 +160,17 @@
         width: 410px;
         height: 353px;
     }
-    
+
     .tools {
         width: auto;
         height: 328px;
     }
-    
+
     .aboutImg {
         width: auto;
         height: 328px;
     }
-    
+
     .about-description {
         display: flex;
         justify-content: center;
@@ -188,10 +189,214 @@
     /* Bem Vindo */
 
     .bemVindo {
-        background-color: #FFA600;
+        background-color: #706C5F;
         width: 410px;
-        height: 704px;
+        height: 730px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
     }
+
+    .l1,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 143px;
+        line-height: 120px;
+    }
+
+    .l2,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 96px;
+        line-height: 84.5px;
+    }
+
+    .l3,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 81px;
+        line-height: 73px;
+    }
+
+    .l4,
+    h3 {
+        color: #ffa600;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 105px;
+        line-height: 100px;
+    }
+
+    .l5,
+    h3 {
+        color: #ffa600;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 105px;
+        line-height: 120px;
+    }
+
+    .l6,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 240px;
+        line-height: 190px;
+    }
+
+    /* Meus Projetos */
+
+    .meusProjetos {
+        background-color: #706C5F;
+        width: 410px;
+        height: 2654px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .idenVisual {
+        width: 100%;
+        height: 272px;
+    }
+
+    .projetosWeb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 894px;
+    }
+
+    .projetosWeb h1 {
+        color: #FFA600;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    .notebook {
+        width: 379px;
+        height: 712px;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 620px;
+    }
+
+    .logos h1 {
+        color: #FFA600;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    .projetosMobile {
+        background-color: #FFA600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 868px;
+    }
+
+    .projetosMobile h1 {
+        color: #000000;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    /* Contato */
+
+    .contacts {
+        border: #ff1100 solid 2px;
+        background-color: #706C5F;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 464px;
+    }
+
+    .contactDescription {
+        border: #00ff22 solid 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 259px;
+    }
+
+    .contactDescription h1 {
+        margin-top: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 34px;
+        line-height: 20px;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+
+    .destaque {
+        color: #000000;
+    }
+
+    .paint {
+        width: 38px;
+        height: 38px;
+        top: 20px;
+        left: 10px;
+        position: absolute;
+        z-index: 3;
+    }
+    
+    .box-yellow {
+        background-color: #ffa600;
+        border: solid 1px #000;
+        border-style: dashed;
+        top: 38px;
+        left: 25px;
+        width: 147px;
+        height: 104px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .entreEmContato {
+        border: #003cff solid 2px;
+        width: 100%;
+        height: 205px;
+
+    }
+
+
+    /* Meus Projetos */
+    /* Meus Projetos */
+    /* Meus Projetos */
+    /* Meus Projetos */
+    /* Meus Projetos */
+
+
+
 }
 
 /* === TABLET === */
