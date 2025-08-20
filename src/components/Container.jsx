@@ -11,6 +11,7 @@ import boxLogos from "../assets/img/boxLogos.svg";
 import phone from "../assets/img/phone.svg";
 import note from "../assets/img/notebook.svg";
 import paintBucket from "../assets/img/paint-bucket.svg";
+import vetor from "../assets/img/vetor.svg";
 import aboutImg from "../assets/img/about-img.png";
 
 export default function Container({ children }) {
@@ -168,6 +169,7 @@ export default function Container({ children }) {
               <h1>ENTRE EM
                 <br />CONTATO</h1>
             </div>
+            <img className='vetor' src={vetor} alt="vetor" />
           </div>
         </div>
       </div>

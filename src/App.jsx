@@ -7,7 +7,7 @@ export default function App() {
     <div className="portfolio-container">
       <NavBar />
       <Container />
-     {/* <Footer /> */}
+     <Footer />
     </div>
   );
 }
