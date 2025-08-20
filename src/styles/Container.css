@@ -7,8 +7,9 @@
     /* Menu */
 
     nav {
-        position: relative;
+        position: fixed;
         z-index: 9999;
+        box-shadow: #000 0 3px 10px 2px;
     }
 
     nav ul {
@@ -44,7 +45,7 @@
     /* Home */
 
     .hero {
-        margin-top: 10px;
+        margin-top: 75px;
         display: flex;
         justify-content: center;
         background-color: #706c5f;
