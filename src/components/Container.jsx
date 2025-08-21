@@ -22,7 +22,7 @@ export default function Container({ children }) {
 
         {/* Seção Home */}
 
-        <div className="hero">
+        <div id="home" className="hero">
           <picture>
             <source media="(min-width: 768px)" srcSet={group1} />
             <img
@@ -45,7 +45,7 @@ export default function Container({ children }) {
 
         {/* Seção Sobre Mim */}
 
-        <div className="about">
+        <div id="about" className="about">
           <div className="about-title">
             <h2>
               SOBRE
@@ -102,7 +102,7 @@ export default function Container({ children }) {
 
         {/* Seção Bem Vindo */}
 
-        <div className="bemVindo">
+        <div id="projects" className="bemVindo">
           <h3>
             <p className="l1">BEM</p>
             <p className="l2">VINDO</p>
@@ -113,7 +113,7 @@ export default function Container({ children }) {
           </h3>
         </div>
 
-        {/* Seção Bem Vindo */}
+        {/* Seção Meus Projetos */}
 
         <div className="meusProjetos">
           <img
@@ -147,7 +147,7 @@ export default function Container({ children }) {
 
         {/* Seção Bem Vindo */}
 
-        <div className="contacts">
+        <div id="contact" className="contacts">
           <div className="contactDescription">
             <h1>
               <p>MEU ESTILO DE</p>
