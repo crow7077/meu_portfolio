@@ -1,16 +1,22 @@
 import "../styles/Footer.css";
-import home from "../assets/img/home.svg"
-import whatsApp from "../assets/icons/whatsapp.svg"
-import gitHub from "../assets/icons/github.svg"
-import eMail from "../assets/icons/email.svg"
-import instagram from "../assets/icons/instagram.svg"
-import linkedIn from "../assets/icons/linkedin.svg"
+import home from "../assets/img/home.svg";
+import whatsApp from "../assets/icons/whatsapp.svg";
+import gitHub from "../assets/icons/github.svg";
+import eMail from "../assets/icons/email.svg";
+import instagram from "../assets/icons/instagram.svg";
+import linkedIn from "../assets/icons/linkedin.svg";
 
 export default function Footer() {
   return (
     <footer>
       <div className="circle-white"></div>
-      <img className="home" src={home} alt="botao" onClick />
+      <img
+        className="home"
+        src={home}
+        alt="botao home"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      />
+
       <div className="title">
         <h1>Contato</h1>
       </div>

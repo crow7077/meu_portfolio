@@ -31,6 +31,7 @@ footer {
     width: 52px;
     height: 52px;
     top: -36px;
+    cursor: pointer;
     position: absolute;
     z-index: 2;
 }
