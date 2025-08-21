@@ -30,17 +30,25 @@ export default function Container({ children }) {
               src={retangulos}
               alt="Imagem decorativa"
             />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={folderCv} />
             <img
               className="foldercv"
               src={folderCv}
               alt="Imagem da pasta"
               onClick={() => window.open(cv, "_blank")}
             />
-            <img className="letraT" src={letraT} alt="Letra T" />
-            <img className="arrow" src={arrow} alt="Seta Clicando" />
-
-            <div className="typewrite">Design UI/UX</div>
           </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={letraT} />
+            <img className="letraT" src={letraT} alt="Letra T" />
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={arrow} />
+            <img className="arrow" src={arrow} alt="Seta Clicando" />
+          </picture>
+          <div className="typewrite">Design UI/UX</div>
         </div>
 
         {/* Seção Sobre Mim */}
@@ -57,7 +65,7 @@ export default function Container({ children }) {
             <img className="tools" src={tools} alt="Ferramentas" />
             <img className="aboutImg" src={aboutImg} alt="Foto de perfil" />
           </div>
-          <div className="about-description">
+          <div className="about-description-mobile">
             <h1>
               Me chamo Renato Nunes Junior e sou
               <br />
@@ -96,6 +104,35 @@ export default function Container({ children }) {
               adaptação e por estar sempre atualizado
               <br />
               com as últimas tendências do mercado.
+            </h1>
+          </div>
+          <div className="about-description-desktop">
+            <h1>
+              Me chamo Renato Nunes Junior e sou Desenhista, Designer
+              <br />
+              Gráfico, Digital e UI Designer. Conheci a arte do desenho aos
+              <br />
+              7 anos de idade e desde então, venho desenvolvendo minhas
+              <br />
+              técnicas artísticas. Busquei conhecimento na área digital e
+              <br />
+              me torneiDesigner Gráfico, com mais de 4 anos de
+              <br />
+              experiência, apaixonado por criar visuais impactantes e
+              <br />
+              experiências digitais intuitivas. Tenho uma sólida base em
+              <br />
+              softwares como CorelDRAW, Photoshop, Canva, Figma e
+              <br />
+              Procreate. Ao longo da minha carreira, desenvolvi diversas
+              <br />
+              habilidades, desde a criação de logotipos e artes digitais até
+              <br />
+              a prototipação de interfaces para sites e aplicativos.
+              <br />
+              Me destaco pela minha capacidade de adaptação e por estar
+              <br />
+              sempre atualizado com as últimas tendências do mercado.
             </h1>
           </div>
         </div>
@@ -160,16 +197,19 @@ export default function Container({ children }) {
               <br />
               <p>PERSONALIDADE.</p>
             </h1>
-            
-        <img className="paint" src={paintBucket} alt="paint" />
-        <div className="box-yellow"></div>
+
+            <img className="paint" src={paintBucket} alt="paint" />
+            <div className="box-yellow"></div>
           </div>
           <div className="entreEmContato">
             <div>
-              <h1>ENTRE EM
-                <br />CONTATO</h1>
+              <h1>
+                ENTRE EM
+                <br />
+                CONTATO
+              </h1>
             </div>
-            <img className='vetor' src={vetor} alt="vetor" />
+            <img className="vetor" src={vetor} alt="vetor" />
           </div>
         </div>
       </div>

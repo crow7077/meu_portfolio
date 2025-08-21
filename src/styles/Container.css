@@ -62,7 +62,7 @@
         width: 119px;
         height: auto;
         top: 220px;
-        left: 30px;
+        right: 250px;
         position: absolute;
         z-index: 2;
     }
@@ -96,7 +96,7 @@
         width: 102px;
         height: auto;
         top: 241.5px;
-        right: 68.5px;
+        right: 40px;
         position: absolute;
         z-index: 2;
     }
@@ -172,14 +172,18 @@
         height: 328px;
     }
 
-    .about-description {
+    .about-description-desktop {
+        display: none;
+    }
+
+    .about-description-mobile {
         display: flex;
         justify-content: center;
         width: 410px;
         height: 477px;
     }
 
-    .about-description,
+    .about-description-mobile,
     h1 {
         font-size: 18px;
         line-height: 133%;
@@ -386,7 +390,7 @@
         width: 100%;
         height: 205px;
     }
-    
+
     .entreEmContato h1 {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 56px;
@@ -410,12 +414,8 @@
 
     /* footer */
 
-    footer {
+    footer {}
 
-    }
-    /* Meus Projetos */
-    /* Meus Projetos */
-    /* Meus Projetos */
     /* Meus Projetos */
 
 
@@ -432,8 +432,371 @@
 
 /* === DESKTOP === */
 @media (min-width: 1024px) {
-    .container {
-        max-width: 1980px;
+
+    /* Home */
+
+    .hero {
+        width: 113.5rem;
+        height: 55.56rem;
+        margin-top: 75px;
+        display: flex;
+        justify-content: center;
+        background-color: #706c5f;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .retangulos {
+        top: 20px;
+    }
+
+    .letraT {
+        width: 250px;
+        height: auto;
+        top: 632px;
+        right: 970px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .typewrite {
+        top: 455px;
+        right: 220px;
+        font-size: 115px;
+        color: #fff;
+        overflow: hidden;
+        font-family: 'Courier New', Courier, monospace;
+        animation: typing 3s steps(12, end) forwards;
+        animation-delay: 2s;
+        white-space: nowrap;
+        width: 0;
+        position: absolute;
+        z-index: 2;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 12ch;
+        }
+    }
+
+    .foldercv {
+        width: 185px;
+        height: 140px;
+        top: 693px;
+        right: 183px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .arrow {
+        width: 74px;
+        height: 102px;
+        top: 820px;
+        right: 150px;
+        transform: translate(-50%, -50%);
+        transform-origin: bottom center;
+        animation: clickArrow 1.5s ease-in-out infinite;
+        position: absolute;
+        z-index: 4;
+    }
+
+    @keyframes clickArrow {
+
+        0%,
+        100% {
+            transform: translate(-50%, -50%) scale(1)
+        }
+
+        50% {
+            transform: translate(-50%, -40%) scale(0.92)
+        }
+    }
+
+    /* Sobre Mim */
+
+    .about {
+        background-color: #706c5f;
+        width: 113.5rem;
+        height: 1005px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-title {
+        left: 860px;
+        margin-top: 8.5rem;
+    }
+
+    .about-title,
+    h2 {
+        font-family: 'Alice';
+        text-align: left;
+        font-size: 140px;
+        font-weight: 100;
+        color: #ffa600;
+        line-height: 110px;
+    }
+
+    .about-img-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tools {
+        display: none;
+    }
+
+    .aboutImg {
+        top: 320px;
+        right: 230px;
+        width: 650px;
+        height: auto;
+    }
+
+    .about-description-mobile {
+        display: none;
+    }
+
+    .about-description-desktop {
+        display: flex;
+        right: 135px;
+        width: 830px;
+        height: auto;
+        top: 20rem;
+    }
+
+    .about-description-desktop,
+    h1 {
+        font-size: 30px;
+        line-height: 145%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Bem Vindo */
+
+    .bemVindo {
+        background-color: #706C5F;
+        width: 410px;
+        height: 730px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .l1,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 143px;
+        line-height: 120px;
+    }
+
+    .l2,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 96px;
+        line-height: 84.5px;
+    }
+
+    .l3,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 81px;
+        line-height: 73px;
+    }
+
+    .l4,
+    h3 {
+        color: #ffa600;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 105px;
+        line-height: 100px;
+    }
+
+    .l5,
+    h3 {
+        color: #ffa600;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 105px;
+        line-height: 120px;
+    }
+
+    .l6,
+    h3 {
+        color: #000000;
+        font-family: 'Alfa Slab One', cursive;
+        font-size: 240px;
+        line-height: 190px;
+    }
+
+    /* Meus Projetos */
+
+    .meusProjetos {
+        background-color: #706C5F;
+        width: 410px;
+        height: 2654px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .idenVisual {
+        width: 100%;
+        height: 272px;
+    }
+
+    .projetosWeb {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 894px;
+    }
+
+    .projetosWeb h1 {
+        color: #FFA600;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    .notebook {
+        width: 379px;
+        height: 712px;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 620px;
+    }
+
+    .logos h1 {
+        color: #FFA600;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    .projetosMobile {
+        background-color: #FFA600;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 868px;
+    }
+
+    .projetosMobile h1 {
+        color: #000000;
+        font-family: 'Alice', cursive;
+        text-align: center;
+        font-size: 64px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+
+    /* Contato */
+
+    .contacts {
+        background-color: #706C5F;
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 464px;
+    }
+
+    .contactDescription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 259px;
+    }
+
+    .contactDescription h1 {
+        margin-top: 72px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 34px;
+        line-height: 20px;
+        font-weight: 600;
+        position: relative;
+        z-index: 1;
+    }
+
+    .destaque {
+        color: #000000;
+    }
+
+    .paint {
+        width: 38px;
+        height: 38px;
+        top: 20px;
+        left: 10px;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .box-yellow {
+        background-color: #ffa600;
+        border: solid 1px #000;
+        border-style: dashed;
+        top: 38px;
+        left: 25px;
+        width: 147px;
+        height: 104px;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .entreEmContato {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 205px;
+    }
+
+    .entreEmContato h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 56px;
+        font-weight: 700;
+        top: 25px;
+        text-align: center;
+        color: #FFA600;
+        line-height: 65px;
+        position: relative;
+        z-index: 0;
+    }
+
+    .vetor {
+        top: 64px;
+        left: 20px;
+        width: 370px;
+        height: 78px;
+        position: absolute;
+        z-index: 1;
     }
 
 }
