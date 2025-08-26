@@ -30,36 +30,58 @@ export default function Footer() {
         </h2>
       </div>
       <div className="redesSociais">
-        <div className="whatsApp">
+        <a
+          href="https://wa.me/+5548988756333"
+          target="_blank"
+          className="whatsApp"
+        >
           <img src={whatsApp} alt="WhatsApp" />
           <div>
             <h1>WhatsApp</h1>
           </div>
-        </div>
-        <div className="GitHub">
+        </a>
+        <a
+          href="https://github.com/crow7077"
+          target="_blank"
+          className="GitHub"
+        >
           <img src={gitHub} alt="GitHub" />
           <div>
             <h1>GitHub</h1>
           </div>
-        </div>
-        <div className="E-mail">
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=renatonj0489@gmail.com&su=Contato%20via%20Portfólio&body=Olá%20Renato,"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="E-mail"
+        >
           <img src={eMail} alt="E-mail" />
           <div>
             <h1>E-mail</h1>
           </div>
-        </div>
-        <div className="Instagram">
+        </a>
+
+        <a
+          href="https://www.instagram.com/renatonjr/"
+          target="_blank"
+          className="Instagram"
+        >
           <img src={instagram} alt="Instagram" />
           <div>
             <h1>Instagram</h1>
           </div>
-        </div>
-        <div className="LinkedIn">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/renato-nunes-junior-3a371029b/"
+          target="_blank"
+          className="LinkedIn"
+        >
           <img src={linkedIn} alt="LinkedIn" />
           <div>
             <h1>LinkedIn</h1>
           </div>
-        </div>
+        </a>
       </div>
       <p className="direitosReservados">
         © {new Date().getFullYear()} Meu Portfólio. Todos os direitos

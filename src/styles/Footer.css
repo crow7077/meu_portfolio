@@ -54,21 +54,38 @@ footer {
 }
 
 .redesSociais {
+    /* border: #ffc917 solid 2px;*/
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    width: 410px;
+    width: 400px;
     height: 60px;
     font-family: 'Alice', cursive;
     font-size: 24px;
-    line-height: 23px;    
+    line-height: 23px;
 }
 
-.direitosReservados{
+.redesSociais img {
+    width: 38px;
+    height: auto;
+}
+
+.redesSociais h1 {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Baloo 2', cursive;
+    padding: 5px 5px;
+}
+
+.redesSociais a {
+    text-decoration: none;
+}
+
+.direitosReservados {
     margin-top: 10px;
     width: 410px;
     height: 31px;
     font-family: 'Alice', cursive;
-    font-size: 16px;  
+    font-size: 16px;
 }

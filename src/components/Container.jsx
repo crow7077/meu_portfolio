@@ -139,14 +139,22 @@ export default function Container({ children }) {
 
         {/* Seção Bem Vindo */}
 
-        <div id="projects" className="bemVindo">
+        <div id="projects" className="bemVindo-mobile">
           <h3>
-            <p className="l1">BEM</p>
-            <p className="l2">VINDO</p>
-            <p className="l3">AO MEU</p>
-            <p className="l4">PORT</p>
-            <p className="l5">FÓLIO</p>
-            <p className="l6">DE</p>
+            <p className="l1-mobile">BEM</p>
+            <p className="l2-mobile">VINDO</p>
+            <p className="l3-mobile">AO MEU</p>
+            <p className="l4-mobile">PORT</p>
+            <p className="l5-mobile">FÓLIO</p>
+            <p className="l6-mobile">DE</p>
+          </h3>
+        </div>
+        <div id="projects" className="bemVindo-desktop">
+          <h3>
+            <p className="l1-desktop">BEM VINDO</p>
+            <p className="l2-desktop">AO MEU</p>
+            <p className="l3-desktop">PORTFÓLIO</p>
+            <p className="l4-desktop">DE</p>
           </h3>
         </div>
 

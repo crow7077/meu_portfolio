@@ -10,6 +10,14 @@
     z-index: 0;
 }
 
+/* === TABLET === */
+@media (min-width: 400px) {
+    .container {
+        max-width: 768px;
+    }
+    
+}
+
 
 /* === TABLET === */
 @media (min-width: 768px) {
