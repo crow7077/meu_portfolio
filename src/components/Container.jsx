@@ -13,7 +13,7 @@ import note from "../assets/img/notebook.svg";
 import paintBucket from "../assets/img/paint-bucket.svg";
 import vetor from "../assets/img/vetor.svg";
 import fileLogo from "../assets/img/files-projecs2.svg";
-import notes from "../assets/img/notes.svg";
+import notes from "../assets/img/Notes.svg";
 import phones from "../assets/img/phones.svg";
 import aboutImg from "../assets/img/about-img.png";
 
