@@ -12,6 +12,9 @@ import phone from "../assets/img/phone.svg";
 import note from "../assets/img/notebook.svg";
 import paintBucket from "../assets/img/paint-bucket.svg";
 import vetor from "../assets/img/vetor.svg";
+import fileLogo from "../assets/img/files-projecs2.svg";
+import notes from "../assets/img/notes.svg";
+import phones from "../assets/img/phones.svg";
 import aboutImg from "../assets/img/about-img.png";
 
 export default function Container({ children }) {
@@ -139,7 +142,7 @@ export default function Container({ children }) {
 
         {/* Seção Bem Vindo */}
 
-        <div id="projects" className="bemVindo-mobile">
+        <div className="bemVindo-mobile">
           <h3>
             <p className="l1-mobile">BEM</p>
             <p className="l2-mobile">VINDO</p>
@@ -149,7 +152,7 @@ export default function Container({ children }) {
             <p className="l6-mobile">DE</p>
           </h3>
         </div>
-        <div id="projects" className="bemVindo-desktop">
+        <div className="bemVindo-desktop">
           <h3>
             <p className="l1-desktop">BEM VINDO</p>
             <p className="l2-desktop">AO MEU</p>
@@ -166,58 +169,66 @@ export default function Container({ children }) {
             src={idenVisual}
             alt=" identiade visual"
           />
-          <div className="projetosWeb">
-            <div>
-              <h1>
-                Projeto
-                <br />
-                Web
-              </h1>
-            </div>
-            <img className="notebook" src={note} alt="Projeto Web" />
+        </div>
+        <div className="projetosWeb">
+          <div>
+            <h1>
+              Projeto
+              <br />
+              Web
+            </h1>
           </div>
-          <div className="logos">
-            <div>
-              <h1>Logos</h1>
-              <img className="boxLogos" src={boxLogos} alt="Caixas de Logos" />
-            </div>
-          </div>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={notes} />
+            <img className="note" src={note} alt="note" />
+          </picture>
+        </div>
+        <div className="logos">
+          <h1>Logos</h1>
+          <picture>
+            <source media="(min-width: 768px)" srcSet={fileLogo} />
+            <img className="boxLogo" src={boxLogos} alt="Logo" />
+          </picture>
+        </div>
+        <div id="mobile">
           <div className="projetosMobile">
-            <div>
-              <h1>Mobile</h1>
-            </div>
-            <img className="phone" src={phone} alt="Celular" />
+            <h1>Mobile</h1>
+            <picture>
+              <source media="(min-width: 768px)" srcSet={phones} />
+              <img className="phone" src={phone} alt="phone" />
+            </picture>
           </div>
         </div>
 
-        {/* Seção Bem Vindo */}
+        {/* Seção Contatos */}
 
-        <div id="contact" className="contacts">
+        <div id="contacts">
           <div className="contactDescription">
-            <h1>
-              <p>MEU ESTILO DE</p>
-              <br />
-              <p>
-                <span className="destaque">DESIGN</span> É UM
-              </p>
-              <br />
-              <p>REFLEXO DA MINHA</p>
-              <br />
-              <p>PERSONALIDADE.</p>
-            </h1>
-
-            <img className="paint" src={paintBucket} alt="paint" />
-            <div className="box-yellow"></div>
-          </div>
-          <div className="entreEmContato">
-            <div>
+            <div className="description1">
               <h1>
-                ENTRE EM
+                <p>MEU ESTILO DE</p>
                 <br />
-                CONTATO
+                <p>
+                  <span className="destaque">DESIGN</span> É UM
+                </p>
+                <br />
+                <p>REFLEXO DA MINHA</p>
+                <br />
+                <p>PERSONALIDADE.</p>
               </h1>
+              <img className="paint" src={paintBucket} alt="paint" />
+              <div className="box-yellow"></div>
             </div>
-            <img className="vetor" src={vetor} alt="vetor" />
+            <div className="description2">
+              <div className="entreEmContato">
+                <h1>
+                  ENTRE EM
+                  <br />
+                  CONTATO
+                </h1>
+                <img className="vetor" src={vetor} alt="vetor" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
