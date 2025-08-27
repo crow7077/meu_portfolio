@@ -163,7 +163,7 @@ export default function Container({ children }) {
 
         {/* Seção Meus Projetos */}
 
-        <div className="meusProjetos">
+        <div id="projects" className="meusProjetos">
           <img
             className="idenVisual"
             src={idenVisual}

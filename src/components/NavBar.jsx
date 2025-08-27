@@ -52,7 +52,7 @@ export default function NavBar() {
           </a>
         </li>
         <li>
-          <a href="#contact" onClick={(e) => handleNav(e, "contact")}>
+          <a href="#contact" onClick={(e) => handleNav(e, "contacts")}>
             Contato
           </a>
         </li>
