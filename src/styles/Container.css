@@ -415,11 +415,6 @@
         position: absolute;
         z-index: 1;
     }
-
-    /* footer */
-
-    footer {}
-
 }
 
 
@@ -726,7 +721,7 @@
     }
 
     .description1 h1 {
-        top: 242px;
+        top: 320px;
         font-size: 150px;
         line-height: 70px;
     }
@@ -759,7 +754,7 @@
     }
 
     .vetor {
-        top: 180px;
+        top: 110px;
         left: 450px;
         width: 931px;
         height: auto;
